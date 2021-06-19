@@ -1,0 +1,63 @@
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+        background-image: url('/static/background.jpg');
+      }
+      td,tr{
+          background-color: whitesmoke;
+          opacity: .9;
+      }
+      h2,p{
+          color: skyblue;
+      }
+      td{
+          font-family: 'Times New Roman', Times, serif;
+          font-style: italic;
+           color: rgb(135, 12, 160);
+      }
+    </style>
+    <body>
+    <div class="movie">
+    <h2><u>Recommendations:</u></h2>
+    <p>Showing results for: {{ search_name }}</p>
+    <table class="movie_table" align="center">
+        <tr>
+            <th>Movie Title</th>
+        </tr>
+        <tbody class="table_body">
+            <tr>
+                <td>{{ result[0] }}</td>
+            </tr>
+            <tr>
+                <td>{{ result[1] }}</td>
+            </tr>
+            <tr>
+                <td>{{ result[2] }}</td>
+            </tr>
+            <tr>
+                <td>{{ result[3] }}</td> 
+            </tr>
+            <tr>
+                <td>{{ result[4] }}</td>    
+            </tr>
+            <tr>
+                <td>{{ result[5] }}</td>
+            </tr>
+            <tr>
+                <td>{{ result[6] }}</td>
+            </tr>
+            <tr>
+                <td>{{ result[7] }}</td>
+            </tr>
+            <tr>
+                <td>{{ result[8] }}</td>
+            </tr>
+            <tr>
+                <td>{{ result[9] }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="/"><button class="btn"><i class="fa fa-home"></i></button></a>
+    </body>
+</html>
